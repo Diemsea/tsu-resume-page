@@ -4,8 +4,22 @@
         <title>Baby Yoda</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha256-2YQRJMXD7pIAPHiXr0s+vlRWA7GYJEK0ARns7k2sbHY=" crossorigin="anonymous" />
         <style>
-            img.bio-image { float: left; padding: 0rem 3rem 0rem 1rem; height: 18.5rem; }
+            img.bio-image { float: left; 
+            padding: 0rem 3rem 0rem 1rem; 
+            height: 18.5rem; 
+            border-radius: 5em;
+            }
         </style>
+        <script>
+            function changeBackgroundColor() {
+                const letters = '0123456789ABCDEF';
+                let color = '#';
+                for (let i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                document.body.style.background = color;
+            }
+        </script>
     </head>
     <body>
         <div class="container">
@@ -21,15 +35,19 @@
                     <!-- Contact Info -->
                     <span><strong>Email:</strong> <a href="mailto:baby.yoda@meme.io">baby.yoda@meme.io</a></span><br>
                     <span><strong>Phone:</strong> 208-829-2122</span>
-                </div>
+                    <span><strong> GitHub</strong> <a href="https://github.com/diemsea">Diemsea</a></span>
+                    <span><strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/daveciuba/">daveciuba</a></span>
+                    <p></p>
             </div>
 
             <hr />
 
             <!-- Work History -->
+            <button onclick="changeBackgroundColor()">Change Background Color</button>
+
             <div class="row">
                 <div class="twelve column">
-                    <h4>Work History - NONE</h4>
+                    <h4>Work History</h4>
 
                     <h6><strong>Pied Piper</strong> 2017-Present</h6>
                     <p>Beard twee live-edge, pop-up kogi pabst etsy shoreditch small batch vegan. Skateboard brooklyn gochujang 90's ennui pour-over before they sold out swag cliche wolf butcher cronut sriracha shoreditch bushwick. Activated charcoal jean shorts chillwave four dollar toast meggings health goth cornhole.</p>
@@ -47,8 +65,8 @@
                 <div class="twelve column">
                     <h4>Education</h4>
 
-                    <h6><strong>Super Hacker U</strong> 2010</h6>
-                    <p>Beard twee live-edge, pop-up kogi pabst etsy shoreditch small batch vegan. Skateboard brooklyn gochujang 90's ennui pour-over before they sold out swag cliche wolf butcher cronut sriracha shoreditch bushwick. Activated charcoal jean shorts chillwave four dollar toast meggings health goth cornhole.</p>
+                    <h6><strong>TSheets U</strong> 2020</h6>
+                    <p>Attended 2 one hour classes after work where I learned how to create this resume.</p>
 
                 </div>
             </div>
